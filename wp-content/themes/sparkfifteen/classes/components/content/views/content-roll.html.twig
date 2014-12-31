@@ -1,0 +1,12 @@
+{# Basic Spark Content Block #}
+
+<div class="spark-content spark-region">
+	{% for slide in roll %}
+		{# {{ dump(slide) }} #}
+		<div class="post preview">
+			{{slide.post_title}}
+			{{slide.post_date}}
+			{{slide.post_content}}
+		</div>
+	{% endfor %}
+</div>
